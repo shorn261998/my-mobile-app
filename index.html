@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Mobile App</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ffffff"/>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        iframe {
+            border: none;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <iframe src="https://script.google.com/macros/s/AKfycbxRRA8nEaWnZ7VEWLRQI_PS5Ufk8nfK0SeqC3g4fmr_-2X3cd4hhQNJZc9g8YUSjeP3Fg/exec"></iframe>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js');
+        }
+    </script>
+</body>
+</html>
